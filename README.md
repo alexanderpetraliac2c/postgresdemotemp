@@ -14,7 +14,7 @@
 2.  Ensure that column datatypes from the PostgreSQL table are properly mapped to the Oracle Database table.
 3.  In your Oracle Database; change the ‘UNITS’ to be ‘CHAR’ and not ‘BYTE’ for character datatypes in your desired table for DMS. (When DMS is active and the character outputs to PostgreSQL are incorrect, change this setting)
 
-![](file:///C:\Users\Alex\Desktop\dmsDocumentation\Screenshot_1.png)
+![](/images/1.png)
 
 
 
@@ -38,49 +38,49 @@
 
 1. Create new Azure Migration Service resource 
 
-![](file:///C:\Users\Alex\Desktop\dmsDocumentation\Screenshot_3.png)
+![](/images/2.png)
 
 2. Enter in your credentials for the resource and make sure to choose the “Premium SKU” as this is required for continuous data migration. 
 
-![](file:///C:\Users\Alex\Desktop\dmsDocumentation\Screenshot_4.png)
+![](/images/3.png)
 
 3. Create new migration project 
 
-![](file:///C:\Users\Alex\Desktop\dmsDocumentation\Screenshot_7.png)
+![](/images/4.png)
 
 4. Create the migration project, making sure to once again use the “Premium SKU” 
 
-![](file:///C:\Users\Alex\Desktop\dmsDocumentation\Screenshot_9.png)
+![](/images/5.png)
 
 5. Create a “New Activity” in the new migration project
 
-![](file:///C:\Users\Alex\Desktop\dmsDocumentation\Screenshot_12.png)
+![](/images/6.png)
 
 6. Connect to your Oracle Database
 
-![](file:///C:\Users\Alex\Desktop\dmsDocumentation\Screenshot_13.png)
+![](/images/7.png)
 
 7. Connect OCI Driver from File Share Folder 
 
 * You will need the file share link, username (which has all permissions for the drive), and the password for the username 
 * If ‘readonly, archive’ error: right click the driver zip file->uncheck ‘read-only’ 
 
-![](file:///C:\Users\Alex\Desktop\dmsDocumentation\Screenshot_14.png)
+![](/images/8.png)
 
 8. Connect to the Azure PostgreSQL Database 
 
-![](file:///C:\Users\Alex\Desktop\dmsDocumentation\Screenshot_15.png)
+![](/images/9.png)
 
 9. Select the Schemas you want to use for sync 
 
 * If nothing shows up this means you did not properly set up the names, datatypes, etc. For the Oracle and PostgreSQL tables. 
 
-![](file:///C:\Users\Alex\Desktop\dmsDocumentation\Screenshot_16.png)
+![](/images/10.png)
 
 10. Check the summary if all settings/configurations are correct then click "Run Migration"
 
-![](file:///C:\Users\Alex\Desktop\dmsDocumentation\Screenshot_18.png)
+![](/images/11.png)
 
 11. Then check the summary to see if all settings are correct and then run the activity. Once this is done you can check on the current activities in the migration.
 
-![](file:///C:\Users\Alex\Desktop\dmsDocumentation\dms-activity-incremental-data-sync.png)
+![](/images/12.png)
