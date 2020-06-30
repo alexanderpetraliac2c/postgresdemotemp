@@ -35,51 +35,91 @@
 
 ##### Step 3: Connect Oracle Database to Azure DMS 
 
-1. Create new Azure Migration Service resource 
+**1. Create new Azure Migration Service resource**
 
 ![](/Images/2.png)
 
-2. Enter in your credentials for the resource and make sure to choose the “Premium SKU” as this is required for continuous data migration. 
+
+
+
+
+**2. Enter in your credentials for the resource and make sure to choose the “Premium SKU” as this is required for continuous data migration.**
 
 ![](/Images/3.png)
 
-3. Create new migration project 
+
+
+
+
+**3. Create new migration project **
 
 ![](/Images/4.png)
 
-4. Create the migration project, making sure to once again use the “Premium SKU” 
+
+
+
+
+**4. Create the migration project, making sure to once again use the “Premium SKU” **
 
 ![](/Images/5.png)
 
-5. Create a “New Activity” in the new migration project
+
+
+
+
+**5. Create a “New Activity” in the new migration project**
 
 ![](/Images/6.png)
 
-6. Connect to your Oracle Database
+
+
+
+
+**6. Connect to your Oracle Database**
 
 ![](/Images/7.png)
 
-7. Connect OCI Driver from File Share Folder 
+
+
+
+
+**7. Connect OCI Driver from File Share Folder **
 
 * You will need the file share link, username (which has all permissions for the drive), and the password for the username 
 * If ‘readonly, archive’ error: right click the driver zip file->uncheck ‘read-only’ 
 
 ![](/Images/8.png)
 
-8. Connect to the Azure PostgreSQL Database 
+
+
+
+
+**8. Connect to the Azure PostgreSQL Database **
 
 ![](/Images/9.png)
 
-9. Select the Schemas you want to use for sync 
+
+
+
+
+**9. Select the Schemas you want to use for sync **
 
 * If nothing shows up this means you did not properly set up the names, datatypes, etc. For the Oracle and PostgreSQL tables. 
 
 ![](/Images/10.png)
 
-10. Check the summary if all settings/configurations are correct then click "Run Migration"
+
+
+
+
+**10. Check the summary if all settings/configurations are correct then click "Run Migration"**
 
 ![](/Images/11.png)
 
-11. Then check the summary to see if all settings are correct and then run the activity. Once this is done you can check on the current activities in the migration.
+
+
+
+
+**11. Then check the summary to see if all settings are correct and then run the activity. Once this is done you can check on the current activities in the migration.**
 
 ![](/Images/12.png)
