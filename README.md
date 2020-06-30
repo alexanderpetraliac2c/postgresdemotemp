@@ -37,49 +37,49 @@
 
 1. Create new Azure Migration Service resource 
 
-![](/images/2.png)
+![](/Images/2.png)
 
 2. Enter in your credentials for the resource and make sure to choose the “Premium SKU” as this is required for continuous data migration. 
 
-![](/images/3.png)
+![](/Images/3.png)
 
 3. Create new migration project 
 
-![](/images/4.png)
+![](/Images/4.png)
 
 4. Create the migration project, making sure to once again use the “Premium SKU” 
 
-![](/images/5.png)
+![](/Images/5.png)
 
 5. Create a “New Activity” in the new migration project
 
-![](/images/6.png)
+![](/Images/6.png)
 
 6. Connect to your Oracle Database
 
-![](/images/7.png)
+![](/Images/7.png)
 
 7. Connect OCI Driver from File Share Folder 
 
 * You will need the file share link, username (which has all permissions for the drive), and the password for the username 
 * If ‘readonly, archive’ error: right click the driver zip file->uncheck ‘read-only’ 
 
-![](/images/8.png)
+![](/Images/8.png)
 
 8. Connect to the Azure PostgreSQL Database 
 
-![](/images/9.png)
+![](/Images/9.png)
 
 9. Select the Schemas you want to use for sync 
 
 * If nothing shows up this means you did not properly set up the names, datatypes, etc. For the Oracle and PostgreSQL tables. 
 
-![](/images/10.png)
+![](/Images/10.png)
 
 10. Check the summary if all settings/configurations are correct then click "Run Migration"
 
-![](/images/11.png)
+![](/Images/11.png)
 
 11. Then check the summary to see if all settings are correct and then run the activity. Once this is done you can check on the current activities in the migration.
 
-![](/images/12.png)
+![](/Images/12.png)
