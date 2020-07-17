@@ -1,11 +1,11 @@
 # Prerequisites for PostgreSQL to PosgreSQL-Hyperscale (Azure DMS)
 
-Step 1. Ensure that Azure DMS is already set up for Oracle to PostgreSQL (and have access to all credentials for this)<br\>
-Step 2. Create Azure PostgreSQL-Hyperscale Database<br\>
-Step 3. Migrate schema from PostgreSQL to PostgreSQL-Hyperscale<br\>
-Step 4. Enable logical replication in the postgresql.config file<br\>
-Step 5. Ensure that the Network Security Group (NSG) rules for your virtual network<br\>
-   don't block the needed inbound communication ports<br\>
+* Step 1. Ensure that Azure DMS is already set up for Oracle to PostgreSQL (and have access to all credentials for this)
+* Step 2. Create Azure PostgreSQL-Hyperscale Database
+* Step 3. Migrate schema from PostgreSQL to PostgreSQL-Hyperscale
+* Step 4. Enable logical replication in the postgresql.config file
+* Step 5. Ensure that the Network Security Group (NSG) rules for your virtual network
+   don't block the needed inbound communication ports
 
 ## Step 2: Create Azure PostgreSQL-Hyperscale Database
 
@@ -27,13 +27,13 @@ To migrate the schema from PostgreSQL we will use PSQL which a utility we will u
 ## Step 4: Enable logical replication in the postgresql.config file
 1. Navigate to your Azure PostgreSQL Database on tthe Azure Portal <br\>
 2. Click on "sever parameters" and set the following parameters: <br\>
-wal_level = logical <br\>
-max_replication_slots = [number of slots], recommend setting to five slots <br\>
-max_wal_senders =[number of concurrent tasks] - The max_wal_senders parameter sets the number of concurrent tasks that can run, recommend setting to 10 tasks <br\>
+* wal_level = logical
+* max_replication_slots = [number of slots], recommend setting to five slots
+* max_wal_senders =[number of concurrent tasks] - The max_wal_senders parameter sets the number of concurrent tasks that can run, recommend setting to 10 tasks
 
 ## Step 5. Ensure that the Network Security Group (NSG) rules for your virtual network 
-1. Navigate to the NSG resource you are using for the PostgreSQL Databases (For other types of Networks, navigate to the firewall settings) <br\>
-2. Open these ports, which are needed for this DMS setup: 443, 53, 9354, 445, 12000, 5432 (PostgreSQL DB's), 1521 (Oracle DB) <br\>
+1. Navigate to the NSG resource you are using for the PostgreSQL Databases (For other types of Networks, navigate to the firewall settings)
+2. Open these ports, which are needed for this DMS setup: 443, 53, 9354, 445, 12000, 5432 (PostgreSQL DB's), 1521 (Oracle DB)
    
    
    
