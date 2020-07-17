@@ -18,8 +18,6 @@
 
 
 ## Prerequisites
-* Must have Oracle Database and Azure PostgreSQL DB connected with Azure DMS 
-* Azure DMS pipeline must be currently active with data sync active between Oracle and PostgreSQL
 * [Prerequisites for Azure DMS: PG to PG-Hyperscale](https://github.com/alexanderpetraliac2c/postgresdemotemp/tree/master/main/pgToPgHyper/Prerequisites)
 
 
