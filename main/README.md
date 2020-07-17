@@ -25,8 +25,8 @@ The **Azure Database Migration Service** is a tool that serves as a way to :
 * Assess **tables and objects** that user wants to migrate to the created **Azure PostgreSQL Database**. 
 * Then migrate the schema from the **Oracle Database** to the **Azure PostgreSQL Database**.
 * After this set up **Azure DMS** by connecting both databases, so that continuous sync can happen between our tables.
-* Once **Azure DMS** connection is established, the **PostgreSQL Database** can be used for applications and analytics.
-
+* We then create an **Azure PostgreSQL-Hyperscale Database** and migrate the schema from regular PostgreSQL
+* Finally, we connect PostgreSQL to PostgreSQL-Hyperscale using Azure DMS
 
 ### **Scenario Setup:**
 
