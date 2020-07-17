@@ -15,7 +15,7 @@ The **Azure Database Migration Service** is a tool that serves as a way to :
 
 ## Scenario
 <kbd>
-  <img src="./Images/15.png">
+  <img src="https://github.com/alexanderpetraliac2c/azure-oracle-migration/blob/master/Images/15.png">
 </kbd></p>
 
 
