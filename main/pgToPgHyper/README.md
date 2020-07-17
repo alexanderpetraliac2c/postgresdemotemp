@@ -15,6 +15,7 @@
 * **Source Datbase:** Azure PostgreSQL-Single Server Database (PostgreSQL Version 10)
 * **Target Database:** Azure PostgreSQL-Hyperscale Database (PostgreSQL Version 11)
 * **DMS Service**: Azure Database Migration Service (Premium SKU)
+* **Duration of Demo:** Approximately 20 minutes
 
 
 ## Prerequisites
