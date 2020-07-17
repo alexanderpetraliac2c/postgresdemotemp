@@ -14,8 +14,6 @@
 * **Source VM:** Windows Server 2019 with Oracle Image (*12.2.0.1.0 Enterprise Edition*) installed.
 * **Oracle Database:** Non-Container Database (*12.2.0.1.0 Enterprise Edition*).
 * **PostgreSQL Database:** Azure PostgreSQL-Single Server, PostgreSQL version 10
-* **Oracle Database Contents:** Contains STORE table with 1000 generated rows
-* **PostgreSQL Database Contents:** Contains STORE(empty pre-migration), SALES_TRANSACTION(100 million rows), and PRODUCTS(1000+ rows) tables
 * **Duration of Demo:** Approximately *30 minutes*
 
 ## Prerequisites
