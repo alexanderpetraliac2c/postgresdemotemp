@@ -1,4 +1,4 @@
-# Azure Database Migration Service: Azure PostgreSQL to Azure PostgreSQL-Hyperscale
+# Azure DMS: Azure PostgreSQL to Azure PostgreSQL-Hyperscale
 
 
 
