@@ -13,20 +13,20 @@ Go to your given Azure Resource group and create the Azure PostgreSQL-Hyperscale
 
 ## Step 3: Migrate schema from PostgreSQL to PostgreSQL-Hyperscale
 
-To migrate the schema from PostgreSQL we will use PSQL which a utility we will use to dump the schema into a .sql file. <br\>
-1. Download PSQL into your current enviroment, add the path to your enviroment variables or navigate to the directory conttaining the PSQL uttilitty with your given command prompt. <br\>
-2. Create a blank file name source_schema.sql into the default directory for PSQL (in some cases the default directory is C:\Users\<your username>) <br\>
-3. run this command with your source PostgreSQL credentials and desired database for DMS: <br\>
-**pg_dump -o -h hostname -U db_username -d db_name -s > source_schema.sql** <br\>
-4. Now go to that file and make sure the schema details were inserted and the file iis not blank <br\>
-5. By default, every schema in the PostgreSQL DB will be in this file for exporting, delete the schema inserts that you do not want to migrate. <br\>
-5. Next, run this command to export the schema(s) to your PostgreSQL-Hyperscale DB: <br\>
-**psql -h hostname -U db_username -d db_name < source_schema.sql** <br\>
-6. Once this is completed, check to see if the schema was properly migrated. <br\>
+To migrate the schema from PostgreSQL we will use PSQL which a utility we will use to dump the schema into a .sql file.
+1. Download PSQL into your current enviroment, add the path to your enviroment variables or navigate to the directory conttaining the PSQL uttilitty with your given command prompt.
+2. Create a blank file name source_schema.sql into the default directory for PSQL (in some cases the default directory is C:\Users\<your username>)
+3. run this command with your source PostgreSQL credentials and desired database for DMS:
+**pg_dump -o -h hostname -U db_username -d db_name -s > source_schema.sql**
+4. Now go to that file and make sure the schema details were inserted and the file iis not blank.
+5. By default, every schema in the PostgreSQL DB will be in this file for exporting, delete the schema inserts that you do not want to migrate.
+5. Next, run this command to export the schema(s) to your PostgreSQL-Hyperscale DB: 
+**psql -h hostname -U db_username -d db_name < source_schema.sql** 
+6. Once this is completed, check to see if the schema was properly migrated.
 
 ## Step 4: Enable logical replication in the postgresql.config file
-1. Navigate to your Azure PostgreSQL Database on tthe Azure Portal <br\>
-2. Click on "sever parameters" and set the following parameters: <br\>
+1. Navigate to your Azure PostgreSQL Database on tthe Azure Portal
+2. Click on "sever parameters" and set the following parameters:
 * wal_level = logical
 * max_replication_slots = [number of slots], recommend setting to five slots
 * max_wal_senders =[number of concurrent tasks] - The max_wal_senders parameter sets the number of concurrent tasks that can run, recommend setting to 10 tasks
