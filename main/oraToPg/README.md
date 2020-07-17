@@ -1,16 +1,5 @@
 # Azure DMS: Oracle to Azure PostgreSQL
 
-The **Azure Database Migration Service** is a tool that serves as a way to :
-* Migrate, guide, and automate your current **database migration** to **Azure**. 
-* Effortlessly **migrate** data, schemas, and objects from various sources to the **cloud**.
-
-## Azure DMS provides the following features:
-* Supports Microsoft SQL Server, MySQL, PostgreSQL, MongoDB, and Oracle migration to Azure from **on-premise and other clouds**.
-* Migration moves data, schema, and objects to Azure.
-* Highly expansive migration service provides stable outcomes with almost **no downtime**.
-* Database Migration Service (**DMS**) works with **PowerShell** commandlets to automatically migrate a list of databases.
-* **Built-in** comprehensive **security** and **compliance**.
-
 
 
 ### **Scenario Details:** <br />
@@ -18,7 +7,6 @@ The **Azure Database Migration Service** is a tool that serves as a way to :
 * Assess **tables and objects** that user wants to migrate to the created **Azure PostgreSQL Database**. 
 * Then migrate the schema from the **Oracle Database** to the **Azure PostgreSQL Database**.
 * After this set up **Azure DMS** by connecting both databases, so that continuous sync can happen between our tables.
-* Once **Azure DMS** connection is established, the **PostgreSQL Database** can be used for applications and analytics.
 
 
 ### **Scenario Setup:**
@@ -35,5 +23,5 @@ The **Azure Database Migration Service** is a tool that serves as a way to :
 
 ## Oracle to PostgreSQL Migration using Azure DMS (Video)
 
-* [World Wide Importer Oracle Database Migration](https://github.com/Click2Cloud/azure-oracle-migration/blob/master/Tutorials/oracleToPostgres/DMS/dmsTutorial.md)
-* [World Wide Importer Oracle Database Migration (Video)](https://github.com/Click2Cloud/azure-oracle-migration/blob/master/Videos/azuredmsproject.mp4)
+* [Oracle to PostgreSQL: DMS Tutorial](https://github.com/Click2Cloud/azure-oracle-migration/blob/master/Tutorials/oracleToPostgres/DMS/dmsTutorial.md)
+* [Oracle to PostgreSQL: DMS Tutorial (Video)](https://github.com/Click2Cloud/azure-oracle-migration/blob/master/Videos/azuredmsproject.mp4)
