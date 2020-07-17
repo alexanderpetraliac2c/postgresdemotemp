@@ -13,13 +13,6 @@ The **Azure Database Migration Service** is a tool that serves as a way to :
 
 
 
-## Scenario
-<kbd>
-  <img src="https://github.com/Click2Cloud/azure-oracle-migration/blob/master/Images/15.png">
-</kbd></p>
-
-
-
 ### **Scenario Details:** <br />
 * Create an on-premise Oracle database through an **Azure Windows 2019 Server VM** with an Oracle image (*12.2.0.1.0 Enterprise Edition*) installed.
 * Assess **tables and objects** that user wants to migrate to the created **Azure PostgreSQL Database**. 
