@@ -1,11 +1,11 @@
 # Prerequisites for PostgreSQL to PosgreSQL-Hyperscale (Azure DMS)
 
-Step 1. Ensure that Azure DMS is already set up for Oracle to PostgreSQL (and have access to all credentials for this) <br\>
-Step 2. Create Azure PostgreSQL-Hyperscale Database <br\>
-Step 3. Migrate schema from PostgreSQL to PostgreSQL-Hyperscale <br\>
-Step 4. Enable logical replication in the postgresql.config file <br\>
-Step 5. Ensure that the Network Security Group (NSG) rules for your virtual network <br\>
-   don't block the needed inbound communication ports <br\>
+Step 1. Ensure that Azure DMS is already set up for Oracle to PostgreSQL (and have access to all credentials for this)<br\>
+Step 2. Create Azure PostgreSQL-Hyperscale Database<br\>
+Step 3. Migrate schema from PostgreSQL to PostgreSQL-Hyperscale<br\>
+Step 4. Enable logical replication in the postgresql.config file<br\>
+Step 5. Ensure that the Network Security Group (NSG) rules for your virtual network<br\>
+   don't block the needed inbound communication ports<br\>
 
 ## Step 2: Create Azure PostgreSQL-Hyperscale Database
 
